@@ -11,12 +11,10 @@
 <body>
     
 <nav>
-    <a href="index.php" class="logo"><span>Music</span>App</a>
+    <a href="index.php"><span>Music</span>App</a>
     <ul>
         <li><a href="index.php">Home</a></li>
-        <li><a href="">How it works</a></li>
-        <li><a href="">Subscription</a></li>
+        <li><a href="how-it-works.php">How it works</a></li>
+        <li><a href="subscription.php">Subscription</a></li>
     </ul>
 </nav>
-</body>
-</html>

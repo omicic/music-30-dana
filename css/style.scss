@@ -71,9 +71,29 @@ nav {
     &>a {
         @extend .logo;
     }
+
+    ul {
+        @include flex(space-between, center, row);
+
+        li {
+            margin-left: 50px;
+        }
+    }
 }
 
 /***footer***/
 footer {
     background: $navPlava;
+    text-align: center;
+    padding: $padding;
+
+    p {
+        color: $bela;
+
+    }
+
+    a {
+        margin: 0 20px;
+        font-size: 1.2rem;
+    }
 }
