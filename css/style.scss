@@ -14,6 +14,14 @@ $fontFamily: 'Montserrat',
 sans-serif;
 $transition: .3s ease;
 
+/***mixins***/
+@mixin flex($justify, $align, $direction) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
 
 /******************************
 basic styles
@@ -38,9 +46,34 @@ ul {
 .logo {
     font-size: 1.7rem;
     font-weight: 600;
+
+    span {
+        color: $pink;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $bela;
+
+    &:hover {
+        color: $pink;
+        transition: $transition;
+    }
 }
 
 /***nav***/
 nav {
+    background: $navPlava;
+    @include flex(space-between, center, row);
+    padding: 30px 60px;
+
+    &>a {
+        @extend .logo;
+    }
+}
+
+/***footer***/
+footer {
     background: $navPlava;
 }
