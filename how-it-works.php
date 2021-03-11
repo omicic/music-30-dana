@@ -8,33 +8,30 @@
             <i class="fa fa-user-circle"></i>
             <h3>Create an account</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ducimus nesciunt tempore laboriosam
-                dolore? Illo odit, error quas, repudiandae necessitatibus voluptas molestias eligendi veritatis modi
-                sapiente, nesciunt quaerat. Ea, adipisci!</p>
+                dolore? Illo odit, error quas, repudiandae</p>
         </div>
         <div>
             <i class="fa fa-drum"></i>
             <h3>Create an account</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ducimus nesciunt tempore laboriosam
-                dolore? Illo odit, error quas, repudiandae necessitatibus voluptas molestias eligendi veritatis modi
-                sapiente, nesciunt quaerat. Ea, adipisci!</p>
+                dolore? Illo odit, error quas, repudiandae</p>
         </div>
         <div>
             <i class="fa fa-cloud-download-alt"></i>
             <h3>Create an account</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ducimus nesciunt tempore laboriosam
-                dolore? Illo odit, error quas, repudiandae necessitatibus voluptas molestias eligendi veritatis modi
-                sapiente, nesciunt quaerat. Ea, adipisci!</p>
+                dolore? Illo odit, error quas, repudiandae</p>
         </div>
     </article>
-    <section class="container artists">
 
-        <article>
+    <section class="artists">
+        <article class="container">
             <h2>Concept & artists</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium velit ab esse tempora nisi maxime,
                 molestias minima commodi id voluptas odio, ipsam harum ex molestiae laudantium neque? Ad, hic eius?</p>
         </article>
 
-        <article>
+        <article class="container">
             <div>
                 <img src="img/artists1.jpg" alt="">
                 <h3>Soul music</h3>

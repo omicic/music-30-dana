@@ -24,6 +24,21 @@ body {
   margin: auto;
 }
 
+h2 {
+  font-size: 3rem;
+  line-height: 1.1;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin: 20px 0;
+}
+
+p {
+  width: 300;
+  font-size: .8rem;
+}
+
 ul {
   list-style: none;
 }
@@ -100,6 +115,7 @@ footer {
 
 footer p {
   color: white;
+  padding: 15px 0;
 }
 
 footer a {
@@ -150,14 +166,13 @@ footer a {
 
 .mainHeader div button {
   padding: 20px 40px;
+  margin-top: 50px;
   font-size: 1rem;
   background: #f91257;
   color: white;
   border: none;
   cursor: pointer;
   text-transform: uppercase;
-  margin-top: 20px;
-  margin-bottom: 20px;
   border-radius: 40px;
   letter-spacing: 2px;
 }
@@ -170,6 +185,7 @@ footer a {
 
 /***unlimited***/
 .unlimited {
+  padding: 80px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -185,25 +201,23 @@ footer a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 80px 60px;
 }
 
 .unlimited article {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 45%;
-          flex: 0 0 45%;
+      -ms-flex: 0 0 48%;
+          flex: 0 0 48%;
 }
 
 .unlimited article button {
   padding: 20px 40px;
+  margin-top: 50px;
   font-size: 1rem;
   background: #f91257;
   color: white;
   border: none;
   cursor: pointer;
   text-transform: uppercase;
-  margin-top: 20px;
-  margin-bottom: 20px;
   border-radius: 40px;
   letter-spacing: 2px;
 }
@@ -251,13 +265,15 @@ footer a {
   margin: 30px 0;
 }
 
-.hivHeader .container div h3 {
-  margin: 0 0 30px 0;
+.hivHeader .container div p {
+  margin: 0 0 50px 0;
 }
 
 /***artists***/
 .artists {
   padding: 80px 0;
+  background: white;
+  color: #09192c;
 }
 
 .artists article:first-child {
@@ -288,7 +304,6 @@ footer a {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 48%;
           flex: 0 0 48%;
-  padding: auto;
 }
 
 .artists article:last-child {

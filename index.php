@@ -12,15 +12,21 @@
     </div>
 </header>
 
-<section class="unlimited">
+<section class="unlimited container">
     <article>
         <h2>Unlimited Access to 100K</h2>
     </article>
     <article>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate natus fugit odit officiis ut soluta qui
-            autem, aperiam officia voluptatibus!</p>
+            autem, aperiam officia voluptatibus!Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate natus
+            fugit odit officiis ut soluta qui
+            autem, aperiam officia voluptatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+            natus fugit odit officiis ut soluta qui
+            autem, aperiam officia voluptatibus! aperiam officia voluptatibus! Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. </p>
         <button>Try it now</button>
     </article>
+
 </section>
 
 
