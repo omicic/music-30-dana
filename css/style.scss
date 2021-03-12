@@ -69,7 +69,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.5rem;
+
     margin: 20px 0;
 }
 
@@ -210,12 +210,12 @@ footer {
 /***artists***/
 
 .artists {
-    padding: $padding;
+
     background: $bela;
     color: $navPlava;
 
     article:first-child {
-        @include flex(space-between, center, row);
+        @include flex(space-between, flex-start, row);
 
         h2 {
             flex: 0 0 48%;
@@ -232,7 +232,6 @@ footer {
         @include flex(space-between, center, row);
         margin-top: 50px;
 
-
         div {
             flex: 0 0 22%;
             text-align: center;
@@ -241,6 +240,77 @@ footer {
                 width: 100%;
                 border-radius: 40px;
             }
+
+        }
+    }
+}
+
+/***concert***/
+.concert {
+    @extend .artists;
+    padding: $padding;
+
+    article:last-child {
+        @include flex(space-between, center, row);
+
+        div {
+            flex: 0 0 15%;
+
+            img {
+                border-radius: 50%;
+            }
+
+        }
+    }
+
+}
+
+.subscription {
+    @extend .mainHeader;
+    padding: $padding;
+
+    .container {
+        @include flex(space-between, center, row);
+
+
+        div:first-child {
+            flex: 0 0 45%;
+
+            img {
+                width: 100%;
+                padding: 40px 0;
+            }
+
+            h3 {
+                font-size: 2rem;
+                color: $pink;
+            }
+
+            button {
+                @include btn;
+            }
+        }
+
+
+        div:last-child {
+            background: rgba($bela, .1);
+            flex: 0 0 45%;
+            border-radius: 30px;
+            @include flex(center, center, row);
+            padding: 30px;
+
+            ul {
+                line-height: 3;
+
+                li::before {
+                    font-family: "Font Awesome 5 Free";
+                    content: "\f058";
+                    color: $pink;
+                    margin-right: 10px;
+                }
+            }
+
+
 
         }
     }
