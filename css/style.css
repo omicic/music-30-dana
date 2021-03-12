@@ -27,19 +27,49 @@ body {
 h2 {
   font-size: 3rem;
   line-height: 1.1;
+  padding: 30px 0;
+}
+
+@media (max-width: 767px) {
+  h2 {
+    font-size: 2rem;
+  }
 }
 
 h3 {
   margin: 20px 0;
 }
 
+@media (max-width: 767px) {
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+
 p {
-  width: 300;
-  font-size: .8rem;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  padding: 20px 0;
+}
+
+@media (max-width: 767px) {
+  p {
+    font-size: 1rem;
+  }
 }
 
 ul {
   list-style: none;
+}
+
+li {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 767px) {
+  li {
+    font-size: 1rem;
+  }
 }
 
 .logo, nav > a {
@@ -54,6 +84,13 @@ ul {
 a {
   text-decoration: none;
   color: white;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 767px) {
+  a {
+    font-size: 1rem;
+  }
 }
 
 a:hover {
@@ -83,6 +120,27 @@ nav {
   padding: 30px 60px;
 }
 
+@media (max-width: 767px) {
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 20px;
+  }
+}
+
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -102,7 +160,13 @@ nav ul {
 }
 
 nav ul li {
-  margin-left: 50px;
+  margin-left: 40px;
+}
+
+@media (max-width: 767px) {
+  nav ul li {
+    padding: 10px auto;
+  }
 }
 
 /***footer***/
@@ -114,7 +178,6 @@ footer {
 
 footer p {
   color: white;
-  padding: 15px 0;
 }
 
 footer a {
@@ -126,7 +189,7 @@ footer a {
 .mainHeader, .subscription {
   background: #0b193c;
   color: white;
-  padding: 0 60px;
+  padding: 80px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -144,10 +207,24 @@ footer a {
           flex-direction: row;
 }
 
+@media (max-width: 767px) {
+  .mainHeader, .subscription {
+    padding: 20px;
+  }
+}
+
 .mainHeader div, .subscription div {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 45%;
           flex: 0 0 45%;
+}
+
+@media (max-width: 767px) {
+  .mainHeader div, .subscription div {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
 }
 
 .mainHeader div img, .subscription div img {
@@ -161,6 +238,18 @@ footer a {
 
 .mainHeader div h1 span, .subscription div h1 span {
   color: #f91257;
+}
+
+@media (max-width: 767px) {
+  .mainHeader div h1, .subscription div h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .mainHeader div p, .subscription div p {
+    font-size: 1rem;
+  }
 }
 
 .mainHeader div button, .subscription div button {
@@ -202,10 +291,38 @@ footer a {
           flex-direction: row;
 }
 
+@media (max-width: 767px) {
+  .unlimited {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 .unlimited article {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 48%;
           flex: 0 0 48%;
+}
+
+@media (max-width: 767px) {
+  .unlimited article {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
 }
 
 .unlimited article button {
@@ -229,7 +346,6 @@ footer a {
 
 /***hivHeader***/
 .hivHeader {
-  padding: 80px 0;
   background: #0b193c;
   color: white;
 }
@@ -258,6 +374,14 @@ footer a {
           flex: 0 0 30%;
 }
 
+@media (max-width: 767px) {
+  .hivHeader .container div {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+}
+
 .hivHeader .container div i {
   color: #f91257;
   font-size: 4rem;
@@ -272,6 +396,13 @@ footer a {
 .artists, .concert {
   background: white;
   color: #09192c;
+  padding: 80px 0;
+}
+
+@media (max-width: 767px) {
+  .artists, .concert {
+    padding: 30px;
+  }
 }
 
 .artists article:first-child, .concert article:first-child {
@@ -292,16 +423,52 @@ footer a {
           flex-direction: row;
 }
 
+@media (max-width: 767px) {
+  .artists article:first-child, .concert article:first-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 .artists article:first-child h2, .concert article:first-child h2 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 48%;
           flex: 0 0 48%;
 }
 
+@media (max-width: 767px) {
+  .artists article:first-child h2, .concert article:first-child h2 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+}
+
 .artists article:first-child p, .concert article:first-child p {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 48%;
           flex: 0 0 48%;
+}
+
+@media (max-width: 767px) {
+  .artists article:first-child p, .concert article:first-child p {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
 }
 
 .artists article:last-child, .concert article:last-child {
@@ -330,6 +497,14 @@ footer a {
   text-align: center;
 }
 
+@media (max-width: 767px) {
+  .artists article:last-child div, .concert article:last-child div {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+}
+
 .artists article:last-child div img, .concert article:last-child div img {
   width: 100%;
   border-radius: 40px;
@@ -340,36 +515,35 @@ footer a {
   padding: 80px 0;
 }
 
-.concert article:last-child {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
 .concert article:last-child div {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 15%;
           flex: 0 0 15%;
 }
 
+@media (max-width: 767px) {
+  .concert article:last-child div {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    margin-bottom: 40px;
+  }
+}
+
 .concert article:last-child div img {
   border-radius: 50%;
 }
 
-.subscription {
-  padding: 80px 0;
+@media (max-width: 767px) {
+  .concert article:last-child div img {
+    width: 60%;
+  }
+}
+
+@media (max-width: 767px) {
+  .subscription {
+    padding: 30px;
+  }
 }
 
 .subscription .container {
@@ -390,10 +564,38 @@ footer a {
           flex-direction: row;
 }
 
+@media (max-width: 767px) {
+  .subscription .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 .subscription .container div:first-child {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 45%;
           flex: 0 0 45%;
+}
+
+@media (max-width: 767px) {
+  .subscription .container div:first-child {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
 }
 
 .subscription .container div:first-child img {
@@ -426,11 +628,12 @@ footer a {
 }
 
 .subscription .container div:last-child {
-  background: rgba(255, 255, 255, 0.1);
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 45%;
-          flex: 0 0 45%;
+      -ms-flex: 0 0 48%;
+          flex: 0 0 48%;
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 30px;
+  padding: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -446,7 +649,15 @@ footer a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 30px;
+}
+
+@media (max-width: 767px) {
+  .subscription .container div:last-child {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    margin-top: 30px;
+  }
 }
 
 .subscription .container div:last-child ul {
@@ -456,7 +667,7 @@ footer a {
 .subscription .container div:last-child ul li::before {
   font-family: "Font Awesome 5 Free";
   content: "\f058";
-  color: #f91257;
   margin-right: 10px;
+  color: #f91257;
 }
 /*# sourceMappingURL=style.css.map */
